@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="/css/styles-form.css">
+</head>
+
+<body>
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <h1>{{title}}</h1>
+            <form id="form" enctype="multipart/form-data">
+            <label for="fileName">Nome del documento:</label>
+            <input type="text" name="fileName" id="fileName">
+            {{#each fields}}
+                <label for="{{name}}">{{label}}</label>
+                <input type="{{type}}" name="{{name}}" id="{{name}}">
+            {{/each}}
+            <button type="submit" id="sendToDb">Invia</button>
+            <button type="submit" id="downloadFile">Download file</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>    
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+    "title": "Sono il primo file Json",
+    "fields": [
+        {
+            "label": "Nome", "type": "String", "name": "nome"
+        },
+        {
+            "label": "Cognome", "type": "String", "name": "cognome"
+        },
+        {
+            "label": "Età", "type": "Number", "name": "età"
+        }
+    ]
+}

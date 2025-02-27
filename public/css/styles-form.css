@@ -1,0 +1,68 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html:before, html::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:deepskyblue;
+}
+
+h1 {
+    margin-bottom:16px;
+    font-size: 20px;
+} 
+
+label {
+    display:flex;
+    font-size:14px;
+    margin-bottom:8px;
+    color:#777;
+}
+
+input {
+    border:1px solid #eee;
+    padding:12px;
+    outline:none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered-form {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.centered-form__box{
+    box-shadow:0 0 17px 1px #1D1F26;
+    background:#F7F7FA;
+    padding:24px;
+    width:70%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.centered-form button {
+    width:100%
+}
+
+.centered-form input {
+    margin-bottom:16px;
+    width:100%
+}
+
+.json-example {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}

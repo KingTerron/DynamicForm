@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <h1>Esempio su come generare un form tramite Json</h1>
+            <pre class="json-example">
+{
+    "title": "Dynamic Form",
+    "fields": [
+        { "label": "Nome", "type": "String", "name": "nome"},
+        { "label": "Cognome", "type": "String", "name": "nome"},
+        { "label": "Età", "type": "Number", "name": "età"}        
+    ]
+}
+            </pre>
+            <h1>Genera il tuo Form da un Json</h1>
+            <form action="/generateForm" method="post" name="createJson">
+                <textarea name="createJson" id="createJson" rows="15" cols="60"></textarea>
+                <label class="fileReader">Select from a file</label>
+                <select name="chooseFile" id="chooseFile">
+                </select>
+                <button type="submit">Genera Form</button>
+            </form>
+        </div>
+    <script src="/js/main.js"></script>    
+</body>
+</html>
