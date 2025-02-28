@@ -24,8 +24,12 @@
             <h1>Genera il tuo Form da un Json</h1>
             <form action="/generateForm" method="post" name="createJson">
                 <textarea name="createJson" id="createJson" rows="15" cols="60"></textarea>
+                <button type="submit">Crea Form</button>
+            </form>
+            <form action="/createFromFile" method="post" name="createJson">
                 <label class="fileReader">Select from a file</label>
                 <select name="chooseFile" id="chooseFile">
+                    <option value="" selected></option>
                 </select>
                 <button type="submit">Genera Form</button>
             </form>
