@@ -7,8 +7,7 @@ router.get('/', (req,res) => {
     res.render('createForm');
 })
 
-router.post('/generateForm', async (req,res) => {
-    
+router.post('/generateForm', async (req,res) => {    
     try {
         let formData = req.body.createJson
         formData = JSON.parse(formData)
@@ -34,7 +33,5 @@ router.get('/generatedForm', async (req,res) => {
         res.status(404).send()
     }
 })
-
-
 
 module.exports = router
